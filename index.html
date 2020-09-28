@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mackdown在线编辑器-牛人干货</title>
+    <link rel="shortcut icon" href="https://p3.pstatp.com/origin/pgc-image/87b0742f6404443ca6bff7da9eb47bed">
+    <link rel="stylesheet" href="editor.md/css/editormd.min.css" />
+    <style>
+        body {
+            font-size: 14px;
+            color: #666;
+            font-family: "Microsoft YaHei", "微软雅黑", Helvetica, Tahoma, STXihei, "华文细黑", STHeiti, "Helvetica Neue", Helvetica, Tahoma, "Droid Sans", "wenquanyi micro hei", FreeSans, Arimo, Arial, SimSun, "宋体", Heiti, "黑体", sans-serif;
+            background: #000;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<header style="font-size: 20px;margin-bottom: 10px;">
+    <h1>Mackdown在线编辑器-牛人干货</h1>
+    <h5>项目开源地址：https://github.com/niurenganhuo/editor</h5>
+</header>
+<div id="editor">
+    <!-- Tips: Editor.md can auto append a `<textarea>` tag -->
+    <textarea style="display:none;">[TOC]
+
+## 牛人干货
+#### 简介
+
+> **牛人干货**是干货君运营的一个技能干货分享站点。分享办公技能、软件APP攻略、电脑手机技巧、精品资源等等实用高效的技能和干货。
+
+#### 产品
+
+1. [牛人干货](https://www.nrgh.net/ "牛人干货")：牛人干货主站。
+2. [工具神器](https://tool.nrgh.net/ "工具神器")：汇集一些实用便捷的在线工具。
+3. [导航神器](https://nav.nrgh.net/ "导航神器")：汇集效率、学习、办公等等高质量常用网站。
+
+#### 媒体
+
+- [简书](https://www.nrgh.net/go.php?url=https://www.jianshu.com/u/c551bb277b7e "简书")
+- [知乎](https://www.nrgh.net/go.php?url=https://www.zhihu.com/people/ganhuojun "知乎")
+- [微博](https://www.nrgh.net/go.php?url=http://weibo.com/5762774647/ "微博")
+- [哔哩哔哩](https://www.nrgh.net/go.php?url=https://space.bilibili.com/44530868/ "哔哩哔哩")
+- [今日头条](https://www.toutiao.com/c/user/6519773163/#mid=50435329352 "今日头条")
+
+
+
+</textarea>
+</div>
+<script src="editor.md/examples/js/jquery.min.js"></script>
+<script src="editor.md/editormd.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        var editor = editormd("editor", {
+            width: "90%",
+            height: "640",
+            // markdown: "xxxx",     // dynamic set Markdown text
+            path : "editor.md/lib/"  // Autoload modules mode, codemirror, marked... dependents libs path
+        });
+    });
+</script>
+</body>
+</html>
